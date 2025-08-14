@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews - MindScribe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>MindScribe</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Product Reviews</h1>
+            <p>Discover the best products with our honest, detailed reviews</p>
+        </div>
+    </header>
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" class="search-input" id="product-search" placeholder="Search products...">
+                <button class="search-btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-category="all">All Products</button>
+                <button class="filter-tab" data-category="electronics">Electronics</button>
+                <button class="filter-tab" data-category="home">Home & Garden</button>
+                <button class="filter-tab" data-category="fitness">Fitness</button>
+                <button class="filter-tab" data-category="lifestyle">Lifestyle</button>
+                <button class="filter-tab" data-category="beauty">Beauty</button>
+                <button class="filter-tab" data-category="books">Books</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="featured-grid" id="products-grid">
+                <!-- Electronics -->
+                <div class="product-card" data-category="electronics">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&crop=center" alt="Premium Wireless Headphones">
+                    <div class="card-content">
+                        <span class="category">Electronics</span>
+                        <h3>Premium Wireless Headphones</h3>
+                        <p>Experience crystal-clear sound with active noise cancellation and 30-hour battery life.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                        <div class="price">$199.99</div>
+                        <a href="products/wireless-headphones.html" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="electronics">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=200&fit=crop&crop=center" alt="Fitness Smart Watch">
+                    <div class="card-content">
+                        <span class="category">Electronics</span>
+                        <h3>Fitness Smart Watch</h3>
+                        <p>Track your health and fitness goals with this feature-packed smartwatch.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.6/5</span>
+                        </div>
+                        <div class="price">$299.99</div>
+                        <a href="products/fitness-smart-watch.html" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="electronics">
+                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300&h=200&fit=crop&crop=center" alt="Portable Bluetooth Speaker">
+                    <div class="card-content">
+                        <span class="category">Electronics</span>
+                        <h3>Portable Bluetooth Speaker</h3>
+                        <p>Powerful sound in a compact design with waterproof rating and 20-hour battery.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5</span>
+                        </div>
+                        <div class="price">$89.99</div>
+                        <a href="products/bluetooth-speaker.html" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <!-- Home & Garden -->
+                <div class="product-card" data-category="home">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=300&h=200&fit=crop&crop=center" alt="Eco-Friendly Plant Pot Set">
+                    <div class="card-content">
+                        <span class="category">Home & Garden</span>
+                        <h3>Eco-Friendly Plant Pot Set</h3>
+                        <p>Beautiful bamboo fiber pots perfect for indoor plants and herb gardens.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.7/5</span>
+                        </div>
+                        <div class="price">$45.99</div>
+                        <a href="products/plant-pot-set.html" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="home">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=200&fit=crop&crop=center" alt="HEPA Air Purifier">
+                    <div class="card-content">
+                        <span class="category">Home & Garden</span>
+                        <h3>HEPA Air Purifier</h3>
+                        <p>Remove 99.97% of airborne particles with this quiet, energy-efficient air purifier.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                        <div class="price">$179.99</div>
+                        <a href="products/air-purifier.html" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <!-- Fitness -->
+                <div class="product-card" data-category="fitness">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=300&h=200&fit=crop&crop=center" alt="Premium Yoga Mat">
+                    <div class="card-content">
+                        <span class="category">Fitness</span>
+                        <h3>Premium Yoga Mat</h3>
+                        <p>Non-slip, eco-friendly mat made from natural rubber for all yoga practices.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0/5</span>
+                        </div>
+                        <div class="price">$69.99</div>
+                        <a href="products/yoga-mat.html" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fitness">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop&crop=center" alt="Resistance Bands Set">
+                    <div class="card-content">
+                        <span class="category">Fitness</span>
+                        <h3>Resistance Bands Set</h3>
+                        <p>Complete workout set with multiple resistance levels and accessories.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i far fa-star"></i>
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="price">$29.99</div>
+                        <a href="#" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <!-- Lifestyle -->
+                <div class="product-card" data-category="lifestyle">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&h=200&fit=crop&crop=center" alt="Programmable Coffee Maker">
+                    <div class="card-content">
+                        <span class="category">Lifestyle</span>
+                        <h3>Programmable Coffee Maker</h3>
+                        <p>Wake up to freshly brewed coffee with this feature-rich programmable coffee maker.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.4/5</span>
+                        </div>
+                        <div class="price">$129.99</div>
+                        <a href="#" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="lifestyle">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=200&fit=crop&crop=center" alt="Anti-Theft Travel Backpack">
+                    <div class="card-content">
+                        <span class="category">Lifestyle</span>
+                        <h3>Anti-Theft Travel Backpack</h3>
+                        <p>Secure, comfortable backpack with USB charging port and multiple compartments.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5</span>
+                        </div>
+                        <div class="price">$79.99</div>
+                        <a href="#" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <!-- Beauty -->
+                <div class="product-card" data-category="beauty">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=200&fit=crop&crop=center" alt="Natural Skincare Set">
+                    <div class="card-content">
+                        <span class="category">Beauty</span>
+                        <h3>Natural Skincare Set</h3>
+                        <p>Complete organic skincare routine with cleanser, toner, and moisturizer.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.6/5</span>
+                        </div>
+                        <div class="price">$89.99</div>
+                        <a href="#" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <!-- Books -->
+                <div class="product-card" data-category="books">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=200&fit=crop&crop=center" alt="Mindfulness & Productivity Guide">
+                    <div class="card-content">
+                        <span class="category">Books</span>
+                        <h3>Mindfulness & Productivity Guide</h3>
+                        <p>Transform your life with proven strategies for mindfulness and peak productivity.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                        <div class="price">$24.99</div>
+                        <a href="#" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="books">
+                    <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?w=300&h=200&fit=crop&crop=center" alt="Healthy Cooking Cookbook">
+                    <div class="card-content">
+                        <span class="category">Books</span>
+                        <h3>Healthy Cooking Cookbook</h3>
+                        <p>100+ delicious and nutritious recipes for a healthier lifestyle.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.7/5</span>
+                        </div>
+                        <div class="price">$19.99</div>
+                        <a href="#" class="btn btn-outline">View Review</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindScribe</h3>
+                    <p>Your trusted source for product recommendations and engaging content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=electronics">Electronics</a></li>
+                        <li><a href="products.html?category=home">Home & Garden</a></li>
+                        <li><a href="products.html?category=fitness">Fitness</a></li>
+                        <li><a href="products.html?category=lifestyle">Lifestyle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@mindscribe.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Innovation Drive, Tech City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MindScribe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
